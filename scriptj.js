@@ -28,7 +28,6 @@ function play(symbol,number){
     if(box.innerText===""){
     document.querySelector(`.box${number}`).innerText=symbol;
     buffer++;
-    }
     if(number<=3)
       i=0;
     else if(number<=6)
@@ -41,6 +40,7 @@ function play(symbol,number){
     else 
         j=2;
     matrix[i][j]=symbol;
+    }
 }
 function check(){
     for(let i=0;i<3;i++){
